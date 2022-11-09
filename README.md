@@ -1,1 +1,3 @@
-# sampletest-demo
+# sampletest-demo 
+
+Install app dependencies
