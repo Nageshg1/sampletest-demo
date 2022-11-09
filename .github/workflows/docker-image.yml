@@ -17,5 +17,6 @@ jobs:
     - name: Build the Docker image
       run: |
           docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-          docker push nageshdocker143/sampletest-demo:latest
+
+          docker push my-image-name:$(date +%s) nageshdocker143/sampletest-demo:latest
       
