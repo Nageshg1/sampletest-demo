@@ -14,9 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build the Docker image and push
       run: |
-          docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+          docker build . --file Dockerfile --tag nageshdocker143/sampletest-demo
 
-          docker push my-image-name:$(date +%s) nageshdocker143/sampletest-demo:latest
+          docker push nageshdocker143/sampletest-demo
       
