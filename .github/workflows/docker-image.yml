@@ -17,6 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
             docker build . --file Dockerfile --tag sampletest-demo
-            docker pull nageshdocker143/sampletest-demo
             docker push nageshdocker143/sampletest-demo
 
