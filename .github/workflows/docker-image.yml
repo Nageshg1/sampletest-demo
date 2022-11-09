@@ -16,6 +16,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-          docker build . --file Dockerfile --tag sampletest-demo:$(date +%s)
-          docker tag sampletest-demo:$(date +%s) nageshdocker143/sampletest-demo:$(date +%s)
-          docker push nageshdocker143/sampletest-demo:$(date +%s)
+          docker build . --file Dockerfile --tag sampletest-demo:$(date)
+          docker push nageshdocker143/sampletest-demo:$(date)
